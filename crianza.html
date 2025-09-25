@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Interactiva de Crianza con IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gemini-result {
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#5DB7DE] mb-2">Guía de Crianza para un Entorno Seguro</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Conectando estilos parentales, límites sanos y la prevención del acoso escolar.</p>
+        </header>
+
+        <section id="bullying-connection" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-2 text-[#FF6F61]">Crianza y su Conexión Directa con el Acoso Escolar</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">El estilo de crianza en casa es un factor determinante en cómo los niños interactúan con sus pares y puede aumentar o disminuir el riesgo de que se involucren en dinámicas de bullying.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-[#FF6F61] pl-4">
+                        <h4 class="font-bold text-lg">Estilo Autoritario</h4>
+                        <p class="text-gray-700">Enseña que la agresión y la imposición son formas válidas de resolver conflictos, <span class="font-semibold">aumentando el riesgo de que el niño sea acosador.</span></p>
+                    </div>
+                     <div class="border-l-4 border-[#FFC700] pl-4">
+                        <h4 class="font-bold text-lg">Estilo Permisivo</h4>
+                        <p class="text-gray-700">La falta de límites claros puede generar dificultades en el autocontrol y el respeto, pudiendo convertirse en <span class="font-semibold">acosadores o en víctimas sin asertividad.</span></p>
+                    </div>
+                    <div class="border-l-4 border-gray-500 pl-4">
+                        <h4 class="font-bold text-lg">Estilo Negligente</h4>
+                        <p class="text-gray-700">La falta de guía y apoyo es un factor de alto riesgo. Los niños pueden buscar atención de forma negativa, <span class="font-semibold">siendo tanto acosadores como víctimas vulnerables.</span></p>
+                    </div>
+                    <div class="border-l-4 border-[#5DB7DE] pl-4">
+                        <h4 class="font-bold text-lg">Estilo Democrático</h4>
+                        <p class="text-gray-700">Fomenta empatía, asertividad y habilidades sociales, por lo que tienen <span class="font-semibold">menor probabilidad de involucrarse en dinámicas de acoso.</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parenting-styles-phrases" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#FF6F61]">Los Estilos Parentales y sus Frases Típicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                 <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#5DB7DE] mb-3">⚖️ Democrático</h3>
+                    <p class="font-semibold text-gray-500 mb-4">"Te guío con respeto y firmeza."</p>
+                    <ul class="list-none text-gray-700 italic space-y-2">
+                        <li>"Entiendo que estés molesto, pero la regla es clara por esta razón..."</li>
+                        <li>"Veo que estás enojado, está bien sentirlo, pero no está bien golpear."</li>
+                        <li>"¿Qué solución se te ocurre para este problema?"</li>
+                        <li>"Confío en tu criterio para resolver esto."</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#FF6F61] mb-3">⛓️ Autoritario</h3>
+                    <p class="font-semibold text-gray-500 mb-4">"Obedeces porque lo digo yo."</p>
+                    <ul class="list-none text-gray-700 italic space-y-2">
+                        <li>"Porque soy tu padre/madre y punto."</li>
+                        <li>"No me respondas ni me cuestiones."</li>
+                        <li>"Si sigues llorando, te daré una razón de verdad para llorar."</li>
+                        <li>"Me decepcionas cuando te portas así."</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#FFC700] mb-3">🤗 Permisivo</h3>
+                    <p class="font-semibold text-gray-500 mb-4">"No quiero que sufras ni te frustres."</p>
+                     <ul class="list-none text-gray-700 italic space-y-2">
+                        <li>"Bueno, pero que sea la última vez..."</li>
+                        <li>"Pobrecito, es que está cansado, por eso se porta mal."</li>
+                        <li>"Te lo compro para que ya no llores."</li>
+                         <li>"Prefiero ser amigo/a de mis hijos."</li>
+                    </ul>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-500 mb-3">🤷 Negligente</h3>
+                    <p class="font-semibold text-gray-500 mb-4">"Arréglatelas como puedas."</p>
+                    <ul class="list-none text-gray-700 italic space-y-2">
+                        <li>"Estoy ocupado, ahora no."</li>
+                        <li>"Haz lo que quieras, no me molestes."</li>
+                        <li>"No tenía idea de que tenías prueba hoy."</li>
+                        <li>(El silencio y la ausencia son su principal comunicación).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="gemini-phrase-analyzer" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-2 text-[#5DB7DE]">✨ Analizador de Frases con IA</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Escribe una frase que uses con tus hijos y descubre a qué estilo de crianza se alinea, su posible impacto y recibe alternativas más respetuosas.</p>
+                <div class="max-w-xl mx-auto">
+                    <textarea id="phrase-input" class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#5DB7DE] focus:border-transparent transition" rows="3" placeholder="Ej: '¡Si no ordenas tu cuarto, no hay postre!'"></textarea>
+                    <button id="analyze-phrase-btn" class="mt-4 w-full bg-[#5DB7DE] text-white font-bold py-3 px-4 rounded-lg hover:bg-[#4a9dc4] transition-colors flex items-center justify-center">
+                        <span id="analyze-btn-text">Analizar Frase</span>
+                        <div id="analyze-loading" class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin ml-2"></div>
+                    </button>
+                    <div id="phrase-result" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 min-h-[100px] gemini-result"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="healthy-limits" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-2 text-[#5DB7DE]">El Arte de Poner Límites Sanos</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Los límites son un acto de amor que brinda seguridad y enseña autocontrol. No se trata de restringir, sino de proteger y guiar.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="text-center p-4">
+                        <div class="text-3xl font-bold text-[#5DB7DE] mb-2">1.</div>
+                        <h4 class="font-bold mb-1">Sé Claro y Consistente</h4>
+                        <p class="text-sm text-gray-600">Las reglas deben ser simples y mantenerse en el tiempo. La consistencia crea seguridad.</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl font-bold text-[#5DB7DE] mb-2">2.</div>
+                        <h4 class="font-bold mb-1">Usa un Lenguaje Positivo</h4>
+                        <p class="text-sm text-gray-600">Enfócate en lo que SÍ se puede hacer. "Las pelotas se lanzan en el patio" en vez de "No tires la pelota aquí".</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl font-bold text-[#5DB7DE] mb-2">3.</div>
+                        <h4 class="font-bold mb-1">Explica el Porqué</h4>
+                        <p class="text-sm text-gray-600">Una razón simple ayuda a que el límite tenga sentido. "Hablamos bajo para no despertar al bebé".</p>
+                    </div>
+                     <div class="text-center p-4">
+                        <div class="text-3xl font-bold text-[#5DB7DE] mb-2">4.</div>
+                        <h4 class="font-bold mb-1">Sé Firme pero Amable</h4>
+                        <p class="text-sm text-gray-600">Valida la emoción, pero mantén el límite. "Entiendo que te enoje, pero el tiempo de pantalla se acabó".</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl font-bold text-[#5DB7DE] mb-2">5.</div>
+                        <h4 class="font-bold mb-1">Ofrece Alternativas</h4>
+                        <p class="text-sm text-gray-600">Dar una pequeña elección dentro del límite fomenta la cooperación. "No puedes comer galletas, ¿prefieres una manzana o un plátano?".</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl font-bold text-[#5DB7DE] mb-2">6.</div>
+                        <h4 class="font-bold mb-1">Usa Consecuencias Lógicas</h4>
+                        <p class="text-sm text-gray-600">La consecuencia debe estar relacionada con la acción. "Si pintas la pared, ayudas a limpiarla".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="responsibility-consequences" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-2 text-[#FF6F61]">Fomentar la Responsabilidad y Entender las Consecuencias</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">La responsabilidad es el pilar para prevenir el bullying. Nace de entender que cada acción tiene una reacción y que debemos hacernos cargo de ellas.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-700">¿Cómo la fomentamos?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-xl text-[#FF6F61] mr-3">🎯</span>
+                                <div><span class="font-bold">Modelando:</span> Sé el ejemplo. Admite tus errores y repara el daño. Tu coherencia es su mejor lección.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-xl text-[#FF6F61] mr-3">🎯</span>
+                                <div><span class="font-bold">Con Tareas Reales:</span> Su contribución en casa (poner la mesa, cuidar una mascota) le enseña que su rol es importante para el grupo.</div>
+                            </li>
+                            <li class="flex items-start">
+                                 <span class="text-xl text-[#FF6F61] mr-3">🎯</span>
+                                <div><span class="font-bold">Enfocados en Reparar:</span> En vez de castigar, pregúntale: "¿Qué podemos hacer para arreglarlo?". Esto enseña empatía y lo obliga a hacerse cargo.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-700">Tipos de Consecuencias</h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <p><span class="font-bold text-[#FF6F61]">Naturales:</span> Ocurren sin intervención. Si no se abriga, siente frío. Si no estudia, le va mal en la prueba.</p>
+                            </li>
+                            <li>
+                                <p><span class="font-bold text-[#FF6F61]">Lógicas:</span> Aplicadas por un adulto y relacionadas a la falta. Son respetuosas y predecibles.</p>
+                                <p class="text-sm italic text-gray-600 mt-1">Ejemplo: Si usa mal la tablet (ciberacoso), la consecuencia lógica es que pierde el privilegio de usarla por un tiempo y debe reparar el daño pidiendo disculpas.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="respectful-parenting" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-2 text-[#FF6F61]">Crianza Respetuosa: Firmeza y Cariño en Equilibrio</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">No es un estilo, es una filosofía. A menudo se confunde con la permisividad, pero su enfoque es guiar con empatía y límites claros.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-green-50 rounded-lg p-6 border border-green-200">
+                        <h3 class="text-2xl font-bold text-green-700 mb-4">✅ Qué SÍ es:</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="font-bold text-green-600 mr-2">&#10140;</span><span>Validar todas las emociones, pero no todas las conductas.</span></li>
+                            <li class="flex items-start"><span class="font-bold text-green-600 mr-2">&#10140;</span><span>Establecer límites claros y firmes de manera respetuosa.</span></li>
+                            <li class="flex items-start"><span class="font-bold text-green-600 mr-2">&#10140;</span><span>Disciplina que enseña, no que castiga.</span></li>
+                            <li class="flex items-start"><span class="font-bold text-green-600 mr-2">&#10140;</span><span>Conectar antes de corregir.</span></li>
+                        </ul>
+                    </div>
+                     <div class="bg-red-50 rounded-lg p-6 border border-red-200">
+                        <h3 class="text-2xl font-bold text-red-700 mb-4">❌ Qué NO es:</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="font-bold text-red-600 mr-2">&#10140;</span><span>Dejar que los niños hagan lo que quieran (permisividad).</span></li>
+                            <li class="flex items-start"><span class="font-bold text-red-600 mr-2">&#10140;</span><span>Criar sin reglas ni "no".</span></li>
+                            <li class="flex items-start"><span class="font-bold text-red-600 mr-2">&#10140;</span><span>Ceder ante berrinches para evitar el conflicto.</span></li>
+                            <li class="flex items-start"><span class="font-bold text-red-600 mr-2">&#10140;</span><span>Dejar que el niño sea el "jefe".</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gemini-scenario-generator" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-2 text-[#FF6F61]">✨ Asistente de Crianza con IA</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">¿No sabes cómo reaccionar? Describe tu situación y recibe una guía paso a paso basada en la crianza respetuosa.</p>
+                <div class="max-w-xl mx-auto">
+                    <textarea id="scenario-input" class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#FF6F61] focus:border-transparent transition" rows="4" placeholder="Ej: Mis dos hijos (5 y 7 años) pelean todas las mañanas por los juguetes y terminamos llegando tarde al colegio."></textarea>
+                    <button id="get-advice-btn" class="mt-4 w-full bg-[#FF6F61] text-white font-bold py-3 px-4 rounded-lg hover:bg-[#fa5a4c] transition-colors flex items-center justify-center">
+                        <span id="advice-btn-text">Dame un Consejo</span>
+                        <div id="advice-loading" class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin ml-2"></div>
+                    </button>
+                    <div id="scenario-result" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 min-h-[100px] gemini-result"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-16 pt-8 border-t border-gray-200">
+            <p class="text-gray-500">Esta guía fue creada para fomentar entornos familiares seguros y respetuosos, como base para una sociedad libre de acoso.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const analyzePhraseBtn = document.getElementById('analyze-phrase-btn');
+        const phraseInput = document.getElementById('phrase-input');
+        const phraseResult = document.getElementById('phrase-result');
+        const analyzeLoading = document.getElementById('analyze-loading');
+        const analyzeBtnText = document.getElementById('analyze-btn-text');
+        
+        const getAdviceBtn = document.getElementById('get-advice-btn');
+        const scenarioInput = document.getElementById('scenario-input');
+        const scenarioResult = document.getElementById('scenario-result');
+        const adviceLoading = document.getElementById('advice-loading');
+        const adviceBtnText = document.getElementById('advice-btn-text');
+
+        const apiKey = ""; 
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+        function formatResponse(text) {
+            const boldFormatted = text.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-gray-800">$1</strong>');
+            const listFormatted = boldFormatted.replace(/^\s*[\*\-]\s/gm, '<br>• ');
+            return listFormatted.replace(/\n/g, '<br>');
+        }
+
+        async function callGeminiAPI(prompt, resultElement, loadingElement, buttonTextElement) {
+            loadingElement.classList.remove('hidden');
+            buttonTextElement.classList.add('hidden');
+            resultElement.innerHTML = '';
+
+            let retries = 3;
+            let delay = 1000;
+
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const payload = {
+                        contents: [{ parts: [{ text: prompt }] }],
+                    };
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    
+                    if (result.candidates && result.candidates.length > 0 && result.candidates[0].content?.parts?.[0]?.text) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        resultElement.innerHTML = formatResponse(text);
+                    } else {
+                        resultElement.textContent = 'No se pudo obtener una respuesta. Por favor, intenta de nuevo.';
+                    }
+                    
+                    loadingElement.classList.add('hidden');
+                    buttonTextElement.classList.remove('hidden');
+                    return;
+
+                } catch (error) {
+                    console.error('API call failed:', error);
+                    if (i === retries - 1) {
+                         resultElement.textContent = 'Ocurrió un error al contactar al servicio. Por favor, revisa tu conexión e intenta más tarde.';
+                    } else {
+                        await new Promise(res => setTimeout(res, delay));
+                        delay *= 2;
+                    }
+                }
+            }
+            loadingElement.classList.add('hidden');
+            buttonTextElement.classList.remove('hidden');
+        }
+
+        analyzePhraseBtn.addEventListener('click', () => {
+            const userPhrase = phraseInput.value;
+            if (userPhrase.trim() === '') {
+                phraseResult.textContent = 'Por favor, escribe una frase para analizar.';
+                return;
+            }
+            const prompt = `
+                Eres un experto en crianza respetuosa y psicología infantil. Analiza la siguiente frase que un padre/madre usa con su hijo: "${userPhrase}".
+                
+                Responde en español y en un formato claro con las siguientes secciones:
+                1. **Estilo Parental:** Identifica con qué estilo de crianza (Democrático, Autoritario, Permisivo, Negligente) se alinea principalmente la frase.
+                2. **Impacto Potencial:** Describe brevemente el posible efecto de esta frase en el niño (en su autoestima, comportamiento, conexión emocional, etc.).
+                3. **Alternativas Respetuosas:** Sugiere 2 o 3 frases alternativas que logren un objetivo similar (poner un límite, motivar, etc.) pero desde un enfoque de crianza respetuosa, explicando brevemente por qué son más efectivas.
+            `;
+            callGeminiAPI(prompt, phraseResult, analyzeLoading, analyzeBtnText);
+        });
+
+        getAdviceBtn.addEventListener('click', () => {
+            const userScenario = scenarioInput.value;
+             if (userScenario.trim() === '') {
+                scenarioResult.textContent = 'Por favor, describe una situación para recibir un consejo.';
+                return;
+            }
+            const prompt = `
+                Eres un experto en crianza respetuosa. Proporciona una guía práctica y paso a paso para que un padre/madre maneje la siguiente situación descrita por un usuario: "${userScenario}".
+                
+                Tu respuesta debe estar en español y seguir los principios de la crianza respetuosa (validar emociones, establecer límites firmes y amables, conectar antes de corregir, enseñar en lugar de castigar).
+                
+                Organiza la guía en pasos claros y accionables. Incluye frases específicas que el padre/madre puede usar en cada paso.
+            `;
+            callGeminiAPI(prompt, scenarioResult, adviceLoading, adviceBtnText);
+        });
+
+    </script>
+</body>
+</html>
